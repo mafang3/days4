@@ -1,0 +1,66 @@
+@import "common.scss";
+@import "_mixin.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    background: #eee;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    border-bottom: 1px solid #ccc;
+    @include box_flex;
+    @include sizing;
+    padding: 0 pxTorem(10px);
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.top {
+    width: 100%;
+    height: pxTorem(70px);
+    border-bottom: 1px solid #ccc;
+    @include box_flex;
+    @include sizing;
+    padding: 0 pxTorem(10px);
+    align-items: center;
+    margin-top: pxTorem(10px);
+    background: #fff;
+}
+
+.top span:nth-child(1) {
+    width: pxTorem(50px);
+    height: pxTorem(50px);
+    border: 1px solid #eee;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: pxTorem(10px);
+}
+
+.top span .iconfont {
+    line-height: pxTorem(50px);
+    font-size: pxTorem(20px);
+}
+
+.list {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    @include box_flex;
+    @include direction(column);
+}
+
+.list li {
+    width: 100%;
+    height: pxTorem(40px);
+    line-height: pxTorem(40px);
+    @include box_flex;
+    @include sizing;
+    padding: 0 pxTorem(10px);
+}
